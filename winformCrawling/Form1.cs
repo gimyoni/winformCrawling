@@ -54,7 +54,7 @@ namespace winformCrawling
             string id = tboxID.Text;
             string pw = tboxPW.Text;
 
-            _driver = new ChromeDriver("C:\\Users\\강종아\\Downloads\\chromedriver_win32");
+            _driver = new ChromeDriver("C:\\Users\\김연희\\Downloads\\chromedriver_win32");
             _driver.Navigate().GoToUrl("https://www.daum.net");  // 웹 사이트에 접속합니다.
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
@@ -88,7 +88,7 @@ namespace winformCrawling
         {
             string strURL = "https://www.google.com/search?q=" + tboxSearch.Text + "&source=lnms&tbm=isch";
 
-            _driver = new ChromeDriver("C:\\Users\\강종아\\Downloads\\chromedriver_win32");
+            _driver = new ChromeDriver("C:\\Users\\김연희\\Downloads\\chromedriver_win32");
             _driver.Navigate().GoToUrl(strURL); // 웹 사이트에 접속합니다.
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
